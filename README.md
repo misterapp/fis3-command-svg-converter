@@ -35,7 +35,7 @@ fis.config.set("svg-converter",{
     fontFamilyName: "smart-icons",
     descent: 64,
     round: 10e12,
-    normalize: strue
+    normalize: true
 });
 
 ```
