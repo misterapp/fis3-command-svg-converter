@@ -28,8 +28,8 @@ fis.config.set("svg-converter",{
     classPrefix: 'icon-',// 字体图标的class前缀
     fontName: "icons",//字体文件的文件名
     types: ['eot', 'woff', 'ttf', 'svg'],// 字体文件的输出类型
-    order: optionToArray(settings.order) || ['eot', 'woff', 'ttf', 'svg'],// 样式文件中font face src的顺序
-    embed: settings.embed === true,// 是否需要将文件base64
+    order: ['eot', 'woff', 'ttf', 'svg'],// 样式文件中font face src的顺序
+    embed: false,// 是否需要将文件base64
     fontHeight: 512,
     startCodepoint: 0xF101,
     fontFamilyName: "smart-icons",

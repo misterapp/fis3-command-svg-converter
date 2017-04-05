@@ -1,4 +1,3 @@
-
 "use strict";
 
 var path = require('path');
@@ -17,7 +16,7 @@ exports.options = {
     '-f, --destStyleFile <destStyleFile>': 'set style file path'
 };
 
-exports.run = function(argv, cli, env) {
+exports.run = function (argv, cli, env) {
 
     var root = env.configBase || process.cwd();
 
@@ -30,11 +29,11 @@ exports.run = function(argv, cli, env) {
     if (exists(filepath)) {
         require(filepath);
     }
-    var settings = fis.config.get("webfont") || {};
+    var settings = fis.config.get("svg-converter") || {};
 
-    argv.src = argv.src || argv.s;
-    argv.dest = argv.dest || argv.d;
-    argv.destStyleFile = argv.destStyleFile || argv.f;
+    settings.src = argv.src || argv.s || settings.src;
+    settings.dest = argv.dest || argv.d || settings.dest;
+    settings.destStyleFile = argv.destStyleFile || argv.f || settings.destStyleFile;
 
     webfont.generateFonts(settings);
 

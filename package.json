@@ -1,7 +1,7 @@
 {
   "name": "fis3-command-svg-converter",
   "description": "converter svg icons to webfont file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/misterapp/fis3-command-svg-converter"
