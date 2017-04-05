@@ -1,0 +1,22 @@
+@font-face {
+            font-family: smart-icons;
+src: url(../dest/icons.eot);
+src: url(../dest/icons.eot?#iefix) format("embedded-opentype"),url(../dest/icons.woff) format("woff"),url(../dest/icons.ttf) format("truetype"),url(../dest/icons.svg#icons) format("svg");
+ font-style: normal;
+                  font-weight: normal;
+        }
+[class^='icon-']:before, [class*='icon-']:before {
+        display: inline-block;
+        width:10px;
+        height:10px;
+        font-family: 'smart-icons' !important;
+        -webkit-font-smoothing:antialiased;
+        }
+.icon-camera:before {content: '\f101';}
+.icon-i-right:before {content: '\f102';}
+.icon-i-wrong:before {content: '\f103';}
+.icon-mailru:before {content: '\f104';}
+.icon-odnoklassniki:before {content: '\f105';}
+.icon-pinterest:before {content: '\f106';}
+.icon-plusone:before {content: '\f107';}
+.icon-single:before {content: '\f108';}

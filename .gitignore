@@ -3,6 +3,17 @@ logs
 *.log
 npm-debug.log*
 
+# eclipse ignore
+.settings/
+.project
+.classpath
+# p4merge
+*.orig
+
+# idea ignore
+.idea/*
+.DS_Store
+
 # Runtime data
 pids
 *.pid
