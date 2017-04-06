@@ -8,7 +8,7 @@ var webfont = require("./lib/webfont");
 
 exports.name = 'svg converter';
 exports.usage = '[options]';
-exports.desc = 'fis3 svg converter,support svg,eot,ttf,woff';
+exports.desc = 'fis3 svg converter,support svg,eot,ttf,woff,woff2';
 
 exports.options = {
     '-s, --src <src>': 'set svg icon dir',

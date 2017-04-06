@@ -1,9 +1,9 @@
 @font-face {
             font-family: smart-icons;
 src: url(../dest/icons.eot);
-src: url(../dest/icons.eot?#iefix) format("embedded-opentype"),url(../dest/icons.woff) format("woff"),url(../dest/icons.ttf) format("truetype"),url(../dest/icons.svg#icons) format("svg");
- font-style: normal;
-                  font-weight: normal;
+src: url(../dest/icons.eot?#iefix) format("embedded-opentype"),url(../dest/icons.woff2) format("woff2"),url(../dest/icons.woff) format("woff"),url(../dest/icons.ttf) format("truetype"),url(../dest/icons.svg#icons) format("svg");
+font-style: normal;
+                 font-weight: normal;
         }
 [class^='icon-']:before, [class*='icon-']:before {
         display: inline-block;

@@ -1,9 +1,9 @@
 
 ## fis3-command-svg-converter
 
-- 基于[grunt-webfont](https://github.com/sapegin/grunt-webfont)的fis3插件
+- 基于[grunt-webfont](https://github.com/sapegin/grunt-webfont)的fis3命令行插件
 
-- 支持将svg icons 转化成svg,oet,ttf,woff，输出相应的样式文件
+- 支持将svg icons 转化成svg,oet,ttf,woff,woff2，输出相应的样式文件
 
 - 支持将字体文件转发成data uri，替换样式文件中的url
 
@@ -22,13 +22,13 @@
 ```javascript
 
 fis.config.set("svg-converter",{
-    src : '/static/fonts/icons',//图标目录
-    dest : '/static/fonts',  //产出字体目录
-    destStyleFile: '/static/css/font.less',// 产出的样式文件路径（支持less,css,sass文件）
+    src : './static/fonts/icons/**.svg',// svg icon文件，遵循node glob(必选)
+    dest : './static/fonts',  //产出字体目录(必选)
+    destStyleFile: './static/css/font.less',// 产出的样式文件路径（支持less,css,sass文件）(必选)
     classPrefix: 'icon-',// 字体图标的class前缀
     fontName: "icons",//字体文件的文件名
-    types: ['eot', 'woff', 'ttf', 'svg'],// 字体文件的输出类型
-    order: ['eot', 'woff', 'ttf', 'svg'],// 样式文件中font face src的顺序
+    types: ['eot','woff2','woff','ttf','svg'],// 字体文件的输出类型
+    order: ['eot','woff2','woff','ttf','svg'],// 样式文件中font face src的顺序
     embed: false,// 是否需要将文件base64
     fontHeight: 512,
     startCodepoint: 0xF101,
