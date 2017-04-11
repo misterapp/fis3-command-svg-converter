@@ -1,5 +1,5 @@
 
-## fis3-command-svg-converter
+## 特点
 
 - 基于[grunt-webfont](https://github.com/sapegin/grunt-webfont)的fis3命令行插件
 
@@ -12,7 +12,7 @@
 
 ### 安装插件
 
-执行 `npm install -g fis3-command-svg-converter` 全局安装
+`npm install fis3-command-svg-converter`
 
 ### 配置
 
@@ -30,6 +30,7 @@ fis.config.set("svg-converter",{
     types: ['eot','woff2','woff','ttf','svg'],// 字体文件的输出类型
     order: ['eot','woff2','woff','ttf','svg'],// 样式文件中font face src的顺序
     embed: false,// 是否需要将文件base64
+    fixSvgViewport: false,// 是否要对svg文件svg标签属性viewBox width height的不匹配情况进行修改
     fontHeight: 512,
     startCodepoint: 0xF101,
     fontFamilyName: "smart-icons",

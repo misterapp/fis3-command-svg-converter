@@ -7,16 +7,21 @@ font-style: normal;
         }
 [class^='icon-']:before, [class*='icon-']:before {
         display: inline-block;
-        width:10px;
-        height:10px;
         font-family: 'smart-icons' !important;
         -webkit-font-smoothing:antialiased;
         }
-.icon-camera:before {content: '\f101';}
-.icon-i-right:before {content: '\f102';}
-.icon-i-wrong:before {content: '\f103';}
-.icon-mailru:before {content: '\f104';}
-.icon-odnoklassniki:before {content: '\f105';}
-.icon-pinterest:before {content: '\f106';}
-.icon-plusone:before {content: '\f107';}
-.icon-single:before {content: '\f108';}
+.icon-album-default:before {content: '\f101';}
+.icon-camera:before {content: '\f102';}
+.icon-camera1:before {content: '\f103';}
+.icon-i-right:before {content: '\f104';}
+.icon-i-wrong:before {content: '\f105';}
+.icon-mailru:before {content: '\f106';}
+.icon-odnoklassniki:before {content: '\f107';}
+.icon-pinterest:before {content: '\f108';}
+.icon-plusone:before {content: '\f109';}
+.icon-right-triangle:before {content: '\f10a';}
+.icon-send-error:before {content: '\f10b';}
+.icon-single:before {content: '\f10c';}
+.icon-solve:before {content: '\f10d';}
+.icon-solve1:before {content: '\f10e';}
+.icon-star:before {content: '\f10f';}
